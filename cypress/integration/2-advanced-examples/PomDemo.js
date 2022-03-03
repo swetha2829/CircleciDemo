@@ -1,5 +1,5 @@
 /// <reference types = "cypress"/>
-import LoginPage from '../PageObjects/LoginPage'
+import LoginPage from '../../PageObjects/LoginPage'
 
 describe(' Test Suite ',function() {
     const lp=new LoginPage()

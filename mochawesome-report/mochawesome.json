@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2022-03-03T09:55:07.183Z",
-    "end": "2022-03-03T09:55:12.743Z",
-    "duration": 5560,
+    "start": "2022-03-03T10:45:01.116Z",
+    "end": "2022-03-03T10:45:05.905Z",
+    "duration": 4789,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3e0258f7-3b37-400a-976e-3580fe01595a",
+      "uuid": "e2685876-8aa9-4ea7-9998-4c5410a4699e",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+          "uuid": "2ff26af3-a89f-4c1f-a9c5-72dfea181669",
           "title": " Test Suite ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Valid Login TestCase ",
               "fullTitle": " Test Suite  Valid Login TestCase ",
               "timedOut": null,
-              "duration": 1849,
+              "duration": 1194,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "lp.visit();\nlp.fillEmail('standard_user');\nlp.fillPassword('secret_sauce');\nlp.submit();\ncy.log(cy.title());",
               "err": {},
-              "uuid": "df771415-4b0a-4ef1-bf4d-3e32260f626d",
-              "parentUUID": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+              "uuid": "4a5b16e3-a149-4c52-a608-07fd1da95522",
+              "parentUUID": "2ff26af3-a89f-4c1f-a9c5-72dfea181669",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "InValid Login Testcase",
               "fullTitle": " Test Suite  InValid Login Testcase",
               "timedOut": null,
-              "duration": 1124,
+              "duration": 1150,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "lp.visit();\nlp.fillEmail('locked_out_user');\nlp.fillPassword('secret_sauce');\nlp.submit();\nconst m = cy.get('[data-test=error]');\ncy.log(m);",
               "err": {},
-              "uuid": "b9a43a84-bb5b-42b1-a5df-0c346197c12e",
-              "parentUUID": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+              "uuid": "31b5cd68-30b3-49ee-9b8f-ef01f73a9976",
+              "parentUUID": "2ff26af3-a89f-4c1f-a9c5-72dfea181669",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Order Product Testcase",
               "fullTitle": " Test Suite  Order Product Testcase",
               "timedOut": null,
-              "duration": 1000,
+              "duration": 942,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "lp.visit();\nlp.fillEmail('standard_user');\nlp.fillPassword('secret_sauce');\nlp.submit();",
               "err": {},
-              "uuid": "6eaf1ee1-105c-47a0-9a12-cea8c1b6ef1b",
-              "parentUUID": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+              "uuid": "23dc1ca4-346e-4079-9390-c82de0e16ce8",
+              "parentUUID": "2ff26af3-a89f-4c1f-a9c5-72dfea181669",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "df771415-4b0a-4ef1-bf4d-3e32260f626d",
-            "b9a43a84-bb5b-42b1-a5df-0c346197c12e",
-            "6eaf1ee1-105c-47a0-9a12-cea8c1b6ef1b"
+            "4a5b16e3-a149-4c52-a608-07fd1da95522",
+            "31b5cd68-30b3-49ee-9b8f-ef01f73a9976",
+            "23dc1ca4-346e-4079-9390-c82de0e16ce8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3973,
+          "duration": 3286,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
