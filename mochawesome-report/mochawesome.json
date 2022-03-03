@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-03T09:55:07.183Z",
+    "end": "2022-03-03T09:55:12.743Z",
+    "duration": 5560,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3e0258f7-3b37-400a-976e-3580fe01595a",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+          "title": " Test Suite ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid Login TestCase ",
+              "fullTitle": " Test Suite  Valid Login TestCase ",
+              "timedOut": null,
+              "duration": 1849,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "lp.visit();\nlp.fillEmail('standard_user');\nlp.fillPassword('secret_sauce');\nlp.submit();\ncy.log(cy.title());",
+              "err": {},
+              "uuid": "df771415-4b0a-4ef1-bf4d-3e32260f626d",
+              "parentUUID": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "InValid Login Testcase",
+              "fullTitle": " Test Suite  InValid Login Testcase",
+              "timedOut": null,
+              "duration": 1124,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "lp.visit();\nlp.fillEmail('locked_out_user');\nlp.fillPassword('secret_sauce');\nlp.submit();\nconst m = cy.get('[data-test=error]');\ncy.log(m);",
+              "err": {},
+              "uuid": "b9a43a84-bb5b-42b1-a5df-0c346197c12e",
+              "parentUUID": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Order Product Testcase",
+              "fullTitle": " Test Suite  Order Product Testcase",
+              "timedOut": null,
+              "duration": 1000,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "lp.visit();\nlp.fillEmail('standard_user');\nlp.fillPassword('secret_sauce');\nlp.submit();",
+              "err": {},
+              "uuid": "6eaf1ee1-105c-47a0-9a12-cea8c1b6ef1b",
+              "parentUUID": "4acdc95a-eb5a-4ec4-a042-82626a5e4001",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "df771415-4b0a-4ef1-bf4d-3e32260f626d",
+            "b9a43a84-bb5b-42b1-a5df-0c346197c12e",
+            "6eaf1ee1-105c-47a0-9a12-cea8c1b6ef1b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3973,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.1.0"
+    }
+  }
+}
